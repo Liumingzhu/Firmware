@@ -90,7 +90,7 @@ if (NOT "${config_rtps_send_topics}" STREQUAL "" OR NOT "${config_rtps_receive_t
 	px4_add_module(
 		MODULE modules__micrortps_bridge__micrortps_client
 		MAIN micrortps_client
-		STACK_MAIN 4096
+		STACK_MAIN 5120
 		INCLUDES
 			${CMAKE_CURRENT_SOURCE_DIR}
 			${CMAKE_CURRENT_BINARY_DIR}/micrortps_client
